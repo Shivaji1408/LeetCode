@@ -34,7 +34,6 @@ public class Ques41{
         // }
         // return Math.max(nums[nums.length-1] + 1, 1);
 
-        int c=0;
         int n=nums.length;
         int ans[]=new int[n+1];
         for(int i=0;i<n;i++)
@@ -47,8 +46,9 @@ public class Ques41{
             if(ans[i]==0)
             return i;
         }
-        if(n==1&&(nums[0]==1||nums[0]==0))
-        return nums[0]+1;
+        if(n==1&&(nums[0]==1||nums[0]==0)){
+            return nums[0]+1;
+        }
         return n+1;
     }
     public static void main(String[] args){
