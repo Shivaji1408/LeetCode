@@ -1,9 +1,9 @@
 public class Ques58 {
     public static int lengthOfLastWord(String s) {
-        String str = s.trim();
+        String st = s.trim();
         int len = 0;
-        for(int i=str.length()-1; i>0; i--){
-            if(str.charAt(i) == ' '){
+        for(int i=st.length()-1; i>=0; i--){
+            if(st.charAt(i) == ' '){
                 break;
             }else{
                 len++;
