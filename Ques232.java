@@ -30,15 +30,15 @@
 
 import java.Collections.*;
 
-class Ques232 {
+public class Ques232 {
     Stack<Integer> ipstk = new Stack<>();
     Stack<Integer> opstk = new Stack<>();
     
-    public MyQueue() {
+    public static void MyQueue() {
         
     }
     
-    public void push(int x) {
+    public static void push(int x) {
         ipstk.push(x);
     }
     
