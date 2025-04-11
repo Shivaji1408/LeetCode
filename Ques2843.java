@@ -1,4 +1,4 @@
-public class Solution {
+public class Ques2843 {
     public static int countSymmetricIntegers(int low, int high) {
         int h = high - low;
         int[] arr = new int[h+1];
