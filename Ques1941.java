@@ -16,7 +16,7 @@
 // 1 <= s.length <= 1000
 // s consists of lowercase English letters.
 
-public class Solution {
+public class Ques1941 {
     public static boolean areOccurrencesEqual(String s) {
         int[] freq = new int[26];
         for(char c: s.toCharArray()){
