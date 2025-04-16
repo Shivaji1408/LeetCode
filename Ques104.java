@@ -15,6 +15,7 @@
 
 
 
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -31,6 +32,12 @@
  * }
  */
 class Ques104 {
+
+    public class TreeNode{
+        static void Node(int data){
+
+        }
+    }
     public int maxDepth(TreeNode root) {
         if(root == null){
             return 0 ;
