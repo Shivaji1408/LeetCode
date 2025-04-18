@@ -1,5 +1,5 @@
-class Ques38 {
-    public String countAndSay(int n) {
+public class Ques38 {
+    public static String countAndSay(int n) {
         String res = "1";
         for (int i = 1; i < n; i++) {
             StringBuilder temp = new StringBuilder();
@@ -16,5 +16,9 @@ class Ques38 {
             res = temp.toString();
         }
         return res;
+    }
+    public static void main(String args[]){
+        int n = 4;
+        System.out.println(countAndSay(n));
     }
 }
