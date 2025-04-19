@@ -31,9 +31,12 @@
  *     }
  * }
  */
-class Ques104 {
+public class Ques104 {
 
     public class TreeNode{
+        int data;
+        TreeNode left;
+        TreeNode right;
         static void Node(int data){
 
         }
@@ -45,5 +48,8 @@ class Ques104 {
         int lh = maxDepth(root.left);
         int rh = maxDepth(root.right);
         return Math.max(lh,rh)+1;
+    }
+    public static void main(String[] args) {
+        
     }
 }
