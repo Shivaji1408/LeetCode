@@ -45,7 +45,7 @@ public class Ques551 {
     }
 
     public static void main(String args[]){
-        String str = "PPALLP";
+        String str = "PPALLLP";
         System.out.println(checkRecord(str));
     }
 }
