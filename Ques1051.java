@@ -5,9 +5,10 @@ public class Ques1051 {
         int n = heights.length;
         int count = 0;
         int expected[] = new int[n];
-        for(int i=0; i<n; i++){
-            expected[i] = heights[i];
-        }
+        System.arraycopy(heights,0,expected,0,n);
+        // for(int i=0; i<n; i++){
+        //     expected[i] = heights[i];
+        // }
         Arrays.sort(expected);
         for(int i=0; i<n; i++){
             if(expected[i] != heights[i]){
