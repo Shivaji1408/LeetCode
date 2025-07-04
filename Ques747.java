@@ -18,25 +18,38 @@
 // 0 <= nums[i] <= 100
 // The largest element in nums is unique.
 
-
-import java.util.Arrays;
-
 public class Ques747 {
+    /* It is the Brute force approach for this question. */
+
+    // public static int dominantIndex(int[] nums) {
+    //     int[] temp = new int[nums.length];
+    //     System.arraycopy(nums,0,temp,0,nums.length);
+    //     Arrays.sort(temp);
+    //     int max = temp[nums.length-1];
+    //     int idx = 0;
+    //     for(int i=0; i<nums.length; i++){
+    //         if(nums[i] == max){
+    //             idx = i;
+    //         }
+    //     }
+    //     if(2*temp[nums.length-2] <= max){
+    //         return idx;
+    //     }
+    //     return -1;
+    // }
+
+    /* It is the Optimised approach for this question. */
     public static int dominantIndex(int[] nums) {
-        int[] temp = new int[nums.length];
-        System.arraycopy(nums,0,temp,0,nums.length);
-        Arrays.sort(temp);
-        int max = temp[nums.length-1];
-        int idx = 0;
-        for(int i=0; i<nums.length; i++){
-            if(nums[i] == max){
-                idx = i;
-            }
+        int maxIndex = 0;
+        for (int i = 0; i < nums.length; ++i) {
+            if (nums[i] > nums[maxIndex])
+                maxIndex = i;
         }
-        if(2*temp[nums.length-2] <= max){
-            return idx;
+        for (int i = 0; i < nums.length; ++i) {
+            if (maxIndex != i && nums[maxIndex] < 2 * nums[i])
+                return -1;
         }
-        return -1;
+        return maxIndex;
     }
     public static void main(String args[]){
         int nums[] = {3,6,1,0};
