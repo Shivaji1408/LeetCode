@@ -1,23 +1,17 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Solution {
-    public static int[] findFactors(int number){
-        int count = 0;
-        int[] arr = new int[number];
-        for(int i=1; i<number; i++){
-            if(number % i == 0){
-                arr[count] = i;
-                count++;
-            }
-        }
-        return arr;
-    }
-
-    public static void main(String args[]){
+   public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
-        
-        for(int i=1; i<=findFactors(number).length; i++){
-            System.out.println(findFactors(number)[i]);
+        Random random = new Random();
+        char[] ch = {'s','p','r'};
+        int i = 0;
+        while (i < 2) { 
+            System.out.print("Enter your Choice : ");
+            String choice = sc.nextLine();
+            int idx = random.nextInt(3 - 0 + 1) + 0;
+            System.out.println(idx);
+            i++;
         }
     }
 }
