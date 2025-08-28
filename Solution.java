@@ -1,17 +1,33 @@
-import java.util.Random;
-import java.util.Scanner;
 public class Solution {
-   public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        Random random = new Random();
-        char[] ch = {'s','p','r'};
-        int i = 0;
-        while (i < 2) { 
-            System.out.print("Enter your Choice : ");
-            String choice = sc.nextLine();
-            int idx = random.nextInt(3 - 0 + 1) + 0;
-            System.out.println(idx);
-            i++;
+    public static int squareSum(int n){
+        int sum = 0;
+        while(n>0){
+            int temp = n%10;
+            sum += temp*temp;
+            n = n/10;
         }
+        return sum;
+    }
+    public static boolean isHappy(int n) {
+        int temp = 0;
+        if(temp == 1){
+            return true;
+        }
+        temp = squareSum(n);
+        while(temp >= 10){
+            temp = squareSum(temp);
+            if(temp == 1){
+                return true;
+            }
+            isHappy(temp);
+        }
+        if(temp < 10){
+            return false;
+        }
+        return false;
+    } 
+    public static void main(String args[]){
+        int n = 1000;
+        System.out.println(isHappy(n));
     }
 }
