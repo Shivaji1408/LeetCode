@@ -1,13 +1,5 @@
 public class Solution {
-    public static int squareSum(int n){
-        int sum = 0;
-        while(n>0){
-            int temp = n%10;
-            sum += temp*temp;
-            n = n/10;
-        }
-        return sum;
-    }
+    
     public static boolean isHappy(int n) {
         int temp = 0;
         if(temp == 1){
@@ -29,5 +21,7 @@ public class Solution {
     public static void main(String args[]){
         int n = 1000;
         System.out.println(isHappy(n));
+        System.out.println("H?gelo ");
+        System.out.println("H?gelo ");
     }
 }
