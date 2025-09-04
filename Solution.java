@@ -1,7 +1,7 @@
 public class Solution {
     public class Student{
-        static String name;
-        static int age;
+        String name;
+        int age;
 
         Student(String name, int age){
             this.name = name;
