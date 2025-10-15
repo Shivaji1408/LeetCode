@@ -17,7 +17,7 @@
 // -105 <= Node.val <= 105
 
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
