@@ -20,7 +20,7 @@
 // 1 <= nums[i] <= 105
 
 
-public class EquilizeArray {
+public class Ques3674 {
     public static int minOperations(int[] nums) {
         boolean allEqual = true;
         for (int num : nums) {

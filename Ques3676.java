@@ -34,7 +34,7 @@
 
 import java.util.Stack;
 
-public class CountBowlSubArray {
+public class Ques3676 {
     public static long bowlSubarrays(int[] nums) {
         int[] parvostine = nums;
         int n = parvostine.length;

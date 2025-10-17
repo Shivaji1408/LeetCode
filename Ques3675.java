@@ -24,7 +24,7 @@
 // s consists only of lowercase English letters.©leetcode
 
 
-public class MinOperation {
+public class Ques3675 {
     public static int minOperations(String s) {
         String temp = s;
         int res = 0;
