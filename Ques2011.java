@@ -68,7 +68,7 @@ public class Ques2011 {
         return X;
     }
     public static void main(String args[]){
-        String[] operations = {"++X","X++","X++"};
+        String[] operations = {"--X","++X","++X","--X","X--","X++","X++"};
         System.out.println(finalValueAfterOperations(operations));
     }
 }
