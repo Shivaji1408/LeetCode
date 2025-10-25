@@ -32,17 +32,35 @@ public class Ques1 {
         }
     }
     public static int[] twoSum(int[] nums, int target) {
-        int arr[]=new int[2];
-        for(int i=0; i<nums.length; i++){
-            arr[0]=i;
-            for(int j=i+1;j<nums.length;j++){
-                if(target==nums[j]+nums[i]){
-                    arr[1]=j;
-                    return arr;
-                }
-            } 
+        // <<<=== My Solution ===>>>
+        
+        // int arr[]=new int[2];
+        // for(int i=0; i<nums.length; i++){
+        //     arr[0]=i;
+        //     for(int j=i+1;j<nums.length;j++){
+        //         if(target==nums[j]+nums[i]){
+        //             arr[1]=j;
+        //             return arr;
+        //         }
+        //     } 
+        // }
+        // return arr;
+
+
+        // <<<=== Optimised Solution ===>>>
+        for(int i=0;i<nums.length-1;i++){
+          if(nums[i]+nums[i+1]==target){
+              return new int[]{i,i+1};
+          }  
         }
-        return arr;
+        for(int i=0;i<nums.length-1;i++){
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==target){
+                  return new int[]{i,j};
+                }
+            }
+        }
+        return new int[]{1,-1};
     }
     public static void main(String[] args) {
         int[] nums = {3,3}; 
