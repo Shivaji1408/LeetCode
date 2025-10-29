@@ -9,7 +9,7 @@
 // Explanation: You can exchange 3 empty bottles to get 1 full water bottle.
 // Number of water bottles you can drink: 9 + 3 + 1 = 13.
 
-// Example 2:
+// Example 2: 
 // Input: numBottles = 15, numExchange = 4
 // Output: 19
 // Explanation: You can exchange 4 empty bottles to get 1 full water bottle. 
