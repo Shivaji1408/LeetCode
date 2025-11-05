@@ -12,7 +12,7 @@
 // -107 <= num <= 107
 
 
-public class Solution {
+public class Ques504 {
     public static String convertToBase7(int num) {
         if(num == 0){
             return "0";
