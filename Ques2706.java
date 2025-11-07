@@ -24,15 +24,19 @@ public class Ques2706 {
     public static int buyChoco(int[] prices, int money) {
         Arrays.sort(prices);
         int count = 0;
+
         int left = money;
+
         for(int i=0; i<prices.length; i++){
             if(prices[i]<=left && count<2){
                 left = left-prices[i];
                 count++;
             }
+
             if(count==2){
                 return left;
             }
+
         }
         return money;
     }
@@ -40,6 +44,7 @@ public class Ques2706 {
     public static void main(String args[]){
         int[] prices = {3,2,3};
         int money = 3;
+        
         System.out.println(buyChoco(prices,money));
     }
 }
