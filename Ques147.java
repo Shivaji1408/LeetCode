@@ -28,7 +28,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-public class Ques14 {
+public class Ques147 {
     public ListNode insertionSortList(ListNode head) {
         ListNode temp = new ListNode(0);
         ListNode curr = head;
