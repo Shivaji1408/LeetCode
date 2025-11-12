@@ -16,7 +16,7 @@
 // 1 <= left <= right <= n
  
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
     ListNode() {}
