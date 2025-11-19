@@ -26,16 +26,37 @@
 
 
 public class Ques2154 {
-    public static int findFinalValue(int[] nums, int original) {
-        int res = original;
+    // <<<<<<<<===========My First Approach for this question (T.C. = 1ms)======>>>>>>>>>
+    
+    // public static int findFinalValue(int[] nums, int original) {
+        //     int res = original;
+        //     for(int i=0; i<nums.length; i++){
+    //         if(nums[i] == res){
+    //             res = res * 2;
+    //             i = -1;
+    //         }
+    //     }
+    //     return res;
+    // }
+
+
+    // <<<<<<<<===========My Second Approach for this question (T.C. = 0ms) ======>>>>>>>>>
+
+    public static boolean checkNum(int[] nums, int value){
         for(int i=0; i<nums.length; i++){
-            if(nums[i] == res){
-                res = res * 2;
-                i = -1;
+            if(value == nums[i]){
+                return true;
             }
         }
-        return res;
+        return false;
     }
+    public static int findFinalValue(int[] nums, int original) {
+        while(checkNum(nums,original)){
+            original = 2 * original;
+        }
+        return original;
+    }
+
 
     public static void main(String args[]){
         int[] nums = {8,19,4,2,15,3};
