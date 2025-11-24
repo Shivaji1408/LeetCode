@@ -22,7 +22,6 @@ import java.util.List;
 import java.util.ArrayList;
 public class Ques1018 {
     public static List<Boolean> prefixesDivBy5(int[] nums) {
-        List<Boolean> lst = new ArrayList<>();
         List<Boolean> ans = new ArrayList<>();
         int val = 0;
         for(int ele : nums){
