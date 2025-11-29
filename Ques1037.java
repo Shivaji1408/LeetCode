@@ -11,7 +11,7 @@
  
 // Constraints:
 // points.length == 3
-// points[i].length == 2
+// points[i].leQues3512ngth == 2
 // 0 <= xi, yi <= 100
 
 
