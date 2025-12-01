@@ -9,23 +9,20 @@
 // Input: n = 0
 // Output: 0
 
-// Example 3:
-// Input: n = 1
-// Output: 0
- 
 // Constraints:
 // 0 <= n <= 5 * 106
 
 
 
 import java.util.Arrays;
-
 public class Ques204 {
     public static int countPrimes(int n) {
         if (n < 2) return 0;
         boolean[] isPrime = new boolean[n];
         Arrays.fill(isPrime, true);
+
         isPrime[0] = isPrime[1] = false;
+
         for (int i = 2; i * i < n; i++) {
             if (isPrime[i]) {
                 for (int j = i * i; j < n; j += i) {
@@ -33,10 +30,12 @@ public class Ques204 {
                 }
             }
         }
+
         int count = 0;
         for (boolean prime : isPrime) {
             if (prime) count++;
         }
+        
         return count;
     }
 
