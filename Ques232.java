@@ -28,11 +28,11 @@
 // myQueue.pop(); // return 1, queue is [2]
 // myQueue.empty(); // return false
 
-import java.Collections.*;
+import java.util.*;
 
 public class Ques232 {
-    Stack<Integer> ipstk = new Stack<>();
-    Stack<Integer> opstk = new Stack<>();
+    static Stack<Integer> ipstk = new Stack<>();
+    static Stack<Integer> opstk = new Stack<>();
     
     public static void MyQueue() {
         
