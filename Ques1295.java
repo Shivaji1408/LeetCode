@@ -22,5 +22,19 @@
 // 1 <= nums[i] <= 105
 
 public class Ques1295 {
-    
+    public static int findNumbers(int[] nums) {
+        int count = 0;
+        for(int i=0; i<nums.length; i++){
+            String temp = Integer.toString(nums[i]);
+            if(temp.length() % 2 == 0){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String args[]){
+        int[] nums = {12,35,687,1152};
+        System.out.println(findNumbers(nums));
+    }
 }
