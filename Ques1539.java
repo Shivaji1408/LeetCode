@@ -38,7 +38,7 @@ public class Ques1539 {
         return res;
     }
     public static void main(String[] args) {
-        int[] nums = {1,4,5,6,12};
+        int[] nums = {2,3,4,7,11};
         int k = 5;
         System.out.println(findNumber(nums,k));
     }
